@@ -1,0 +1,53 @@
+/* gallery.css */
+
+#container {
+    padding:0px;
+    height: 26rem;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent transparent; /* Firefox */
+  }
+  
+  #container::-webkit-scrollbar {
+    width: 12px; /* Set the width to your desired value */
+  }
+  
+  #container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  #container:hover::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  #container::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  #container:hover::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  
+  
+
+#cont{
+    display: flex;
+}
+
+.poster{
+    z-index: 2;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 20rem;
+    width: 14rem;
+    margin-top: 2rem;
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
