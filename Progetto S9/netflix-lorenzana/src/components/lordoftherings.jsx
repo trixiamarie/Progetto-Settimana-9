@@ -5,13 +5,10 @@ import ChevronCompactLeft from 'react-bootstrap-icons/dist/icons/chevron-compact
 import ChevronCompactRight from 'react-bootstrap-icons/dist/icons/chevron-compact-left';
 
 
-class HarryPotterG extends Component {
+export default class LordG extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isDragging: false,
-      startX: 0,
-      scrollLeftAtStart: 0,
       searchResults: [],
     };
   }
@@ -66,4 +63,4 @@ class HarryPotterG extends Component {
   }
 }
 
-export default HarryPotterG;
+

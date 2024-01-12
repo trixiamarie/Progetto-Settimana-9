@@ -9,9 +9,6 @@ class HarryPotterG extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isDragging: false,
-      startX: 0,
-      scrollLeftAtStart: 0,
       searchResults: [],
     };
   }

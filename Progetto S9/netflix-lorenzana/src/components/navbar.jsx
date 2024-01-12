@@ -1,11 +1,14 @@
 import { Image, Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import React from 'react';
+import CaretDownFill from 'react-bootstrap-icons/dist/icons/caret-down-fill';
+import Search from 'react-bootstrap-icons/dist/icons/search';
+import { Link } from 'react-router-dom';
 
 export default function MyNavbar() {
   return (
-    <Navbar expand="lg" bg="dark" variant="dark">
+    <Navbar expand="lg" bg="dark" variant="dark" className='ps-2 pe-3'>
       <Container fluid>
-        <Navbar.Brand href="#">
+        <Navbar.Brand as={Link} to="/">
           <Image
             src="../assets/logo.png"
             width="100"
@@ -39,12 +42,17 @@ export default function MyNavbar() {
           <i className="fa fa-user icons"></i>
         </Navbar.Collapse>
         <div className="d-flex align-items-center m-1">
-            <a href="#placeholder"><i className="bi bi-search"></i></a>
+        
+            <a href="#placeholder"><Search className="text-white mx-3"/></a>
             <a href="#placeholder"><img
               src="../assets/kids_icon.png"
               style={{ width: '50px' }}
               alt="Avatar"
             /></a>
+            <NavDropdown title={<CaretDownFill className="text-white ms-2"/>} id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} to="/profilepage">Edit Profile</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/settings">Settings</NavDropdown.Item>
+            </NavDropdown>
             <a href="#placeholder"><i className="bi bi-bell-fill"></i></a>
             <a href="#placeholder">
               <img
@@ -53,10 +61,6 @@ export default function MyNavbar() {
                 alt="Avatar"
               />
             </a>
-            <NavDropdown title={<i className="bi bi-caret-down-fill"></i>} id="basic-nav-dropdown">
-              <NavDropdown.Item  to="/profilepage">Edit Profile</NavDropdown.Item>
-              <NavDropdown.Item  to="/settings">Settings</NavDropdown.Item>
-            </NavDropdown>
           </div>
       </Container>
     </Navbar>

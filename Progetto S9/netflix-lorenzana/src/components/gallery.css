@@ -28,9 +28,11 @@
   
   #container:hover::-webkit-scrollbar-track {
     background-color: transparent;
-  }
+}
   
-  
+body{
+  background-color: #2c313c;
+}
   
 
 #cont{
