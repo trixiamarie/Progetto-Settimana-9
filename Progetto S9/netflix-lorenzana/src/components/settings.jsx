@@ -39,7 +39,7 @@ export default function SettingsPage() {
             <hr />
           </Col>
         </Row>
-        <Row>
+        <Row className="d-flex justify-content-between">
           <Col xs={9} offset={3}>
             <div className="d-flex justify-content-between">
               <div>
@@ -51,7 +51,8 @@ export default function SettingsPage() {
                   />
                   admin@strive.school
                 </p>
-              </div>
+              </div></div></Col>
+              <Col>
               <div className="text-end">
                 <a href="#p">
                   <p>Update payment info</p>
@@ -60,22 +61,11 @@ export default function SettingsPage() {
                   <p>Billing details</p>
                 </a>
               </div>
-            </div>
+            
             <hr />
           </Col>
         </Row>
-        <Row>
-          <Col xs={6} offset={3}></Col>
-          <Col xs={3} className="text-end">
-            <a href="#p">
-              <p>Update payment info</p>
-            </a>
-            <a href="#p">
-              <p>Billing details</p>
-            </a>
-          </Col>
-          <hr />
-        </Row>
+        
         <Row>
           <Col xs={3}>
             <p className="text-secondary">PLAN DETAILS</p>
@@ -94,7 +84,7 @@ export default function SettingsPage() {
           <Col xs={3}>
             <p className="text-secondary">SETTINGS</p>
           </Col>
-          <Col xs={9}>
+          <Col xs={9} className='text-end'>
             <a href="#p">
               <p>Parental Controls</p>
             </a>
